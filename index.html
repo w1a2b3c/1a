@@ -1,0 +1,202 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>视频网站</title> 
+<style> 
+body {
+  background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.ebc4ddc1fa463cac1ae1e0d57eeb934d?rik=Dqr0rgl%2bstOr%2fA&riu=http%3a%2f%2fguangyuanol.cn%2fuploads%2fallimg%2f190501%2f2153015b7-0.jpg&ehk=bQ4uukLJkg2SkJsnokQci9NvOyTY%2f3UGeLo%2bubuuZZg%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover;
+  background-position: center;
+}
+h1 { 
+font-family: Arial, sans-serif; 
+font-size: 48px; 
+text-align: center; 
+color: #ffffff; 
+margin-top: 50px; 
+} 
+ul li a { 
+color: #000000; 
+text-decoration: none; 
+position: relative; 
+font-size: 24px; 
+} 
+ul li a:hover { 
+color: #ff0000; 
+} 
+ul li a::before { 
+content: ""; 
+position: absolute; 
+bottom: -5px; 
+left: 0; 
+width: 100%; 
+height: 2px; 
+background-color: #ffffff; 
+transform: scaleX(0); 
+transform-origin: left; 
+transition: transform 0.3s ease-in-out; 
+} 
+ul li a:hover::before { 
+transform: scaleX(1); 
+} 
+.search-box { 
+margin-top: 50px; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+} 
+.search-box input[type="text"] { 
+padding: 10px; 
+border: none; 
+border-radius: 5px; 
+box-shadow: 0px 0px 5px #888; 
+width: 400px; 
+font-size: 24px; 
+text-align: center; 
+} 
+.search-box button { 
+padding: 10px 20px; 
+background-color: #ffffff; 
+color: #0077cc; 
+border: none; 
+border-radius: 5px; 
+box-shadow: 0px 0px 5px #888; 
+cursor: pointer; 
+font-size: 24px; 
+} 
+.links { 
+text-align: center; 
+margin-top: 20px; 
+} 
+.links a { 
+color: #000000; 
+text-decoration: none; 
+font-size: 30px; 
+margin-left: 10px; 
+} 
+.links a:last-child { 
+margin-right: 0; 
+} 
+.sidebar { 
+position: fixed; 
+top: 0; 
+right: 0; 
+width: 200px; 
+height: 100%; 
+background-color: #bfefff; 
+display: flex; 
+flex-direction: column; 
+justify-content: center; 
+align-items: center; 
+padding-top: 50px; 
+overflow-y: scroll; 
+max-height: 100%; 
+} 
+.sidebar a { 
+color: #0077cc; 
+text-decoration: none; 
+font-size: 18px; 
+padding: 10px; 
+margin-bottom: 10px; 
+border-radius: 5px; 
+} 
+.sidebar a:hover { 
+background-color: #0077cc; 
+color: #ffffff; 
+} 
+.sidebar a:first-child { 
+margin-top: 0; 
+} 
+.sidebar a:last-child { 
+margin-bottom: 0; 
+} 
+.sidebar-row { 
+display: flex; 
+flex-direction: row; 
+justify-content: center; 
+align-items: center; 
+margin-bottom: 10px; 
+} 
+.sidebar-row a { 
+color: #0077cc; 
+text-decoration: none; 
+font-size: 18px; 
+padding: 10px; 
+margin-right: 10px; 
+border-radius: 5px; 
+} 
+.sidebar-row a:hover { 
+background-color: #0077cc; 
+color: #ffffff; 
+} 
+</style> 
+<script> 
+function login() { 
+var username = document.getElementById("username").value; 
+var password = document.getElementById("password").value; 
+if (username == "admin" && password == "123456") { 
+window.location.href = "https://v.qq.com/"; 
+} else { 
+document.getElementById("error").innerHTML = "账号或密码错误"; 
+} 
+} 
+</script> 
+</head> 
+<body> 
+<h1>欢迎来到小魏网站</h1> 
+<div class="search-box"> 
+<form action="https://www.bing.com/search" method="get"> 
+<input type="text" name="q" placeholder="小魏" autofocus> 
+<button type="submit">搜索</button> 
+</form> 
+</div> 
+<div class="links"> 
+<p>请选择您要跳转的视频网站：</p> 
+<a href="https://v.qq.com/">腾讯视频</a> 
+<a href="https://www.iqiyi.com/">爱奇艺</a> 
+<a href="https://www.youku.com/">优酷</a> 
+<a href="https://www.kuaishou.com/">快手</a> 
+<a href="https://www.douyin.com/">抖音</a> 
+<a href="https://mail.google.com/chat/u/0/">whatsapp</a> 
+<a href="https://wannengrun.net/s/?k=https%3A%2Fv.qq.com%2Fx%2Fcover%2Fmzc00200ron6ekx%2Fh0045rdfz3v.html" target="_blank">看电影</a> 
+<div class="links"> 
+<a href="https://www.educoder.net/" target="_blank">头歌</a> 
+<a href="https://github.com/">GitHub</a> 
+<a href="https://apipost.cn/">APIpost</a> 
+<a href="https://www.apifox.cn/">APIfoxi</a> 
+<a href="https://www.notion.so/">Notion</a> 
+</div>
+</div> 
+<div class="sidebar"> 
+<p>更多视频网站：</p> 
+<div class="sidebar-row"> 
+<a href="https://www.cnki.net/">中国知网</a> 
+<a href="https://www.wanfangdata.com.cn/">万方数据库</a> 
+<a href="http://www.cqvip.com/">维普网</a> 
+<a href="https://xueshu.baidu.com/">百度学术</a> 
+</div> 
+<div class="sidebar-row"> 
+<a href="https://www.bilibili.com/">哔哩哔哩</a> 
+<a href="https://www.mgtv.com/">芒果TV</a> 
+<a href="https://www.pptv.com/">PPTV</a> 
+</div> 
+<div class="sidebar-row"> 
+<a href="https://www.tudou.com/">土豆网</a> 
+<a href="https://www.acfun.cn/">AcFun</a> 
+<a href="https://www.huya.com/">虎牙直播</a> 
+</div> 
+<div class="sidebar-row"> 
+<a href="https://www.douyu.com/">斗鱼直播</a> 
+<a href="https://www.zhanqi.tv/">战旗直播</a> 
+<a href="https://www.huomao.com/">火猫直播</a> 
+</div> 
+<script> 
+// 控制左侧栏的滚动 
+const sidebar = document.querySelector('.sidebar'); 
+window.addEventListener('scroll', () => { 
+sidebar.style.top = window.pageYOffset + 'px'; 
+}); 
+</script> 
+</body> 
+</html>
